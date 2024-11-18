@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Heading */
+.container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* File Input Styling */
+#fileInput {
+    display: block;
+    margin: 10px auto 20px auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Textarea Styling */
+#cssOutput {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none; /* Prevent resizing */
+    background-color: #f9f9f9;
+    color: #555;
+}
+
+/* Button Styling */
+#downloadBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    transition: background-color 0.3s;
+}
+
+#downloadBtn:enabled {
+    cursor: pointer;
+    background-color: #0056b3;
+}
+
+#downloadBtn:hover:enabled {
+    background-color: #004080;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .container h1 {
+        font-size: 1.2rem;
+    }
+
+    #fileInput, #downloadBtn {
+        width: 100%;
+    }
+}
